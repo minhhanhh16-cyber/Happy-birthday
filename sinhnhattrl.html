@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chúc mừng sinh nhật 🎉</title>
+
+    <!-- Font chữ thư pháp -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 15px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            max-width: 100%;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* Ảnh vuốt ngang */
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            scroll-snap-type: x mandatory;
+            margin-bottom: 15px;
+        }
+
+        .gallery img {
+            width: 85%;
+            flex-shrink: 0;
+            border-radius: 15px;
+            scroll-snap-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            font-size: 22px;
+            border: none;
+            border-radius: 14px;
+            background: #ff6f91;
+            color: white;
+            cursor: pointer;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            line-height: 1.9;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>🎁 Có bất ngờ nè</h2>
+
+    <!-- ẢNH: đổi tên đúng với ảnh của m -->
+    <div class="gallery">
+        <img src="img1.jpg">
+        <img src="img2.jpg">
+        <img src="img3.jpg">
+        <img src="img4.jpg">
+    </div>
+
+    <button onclick="showMessage()">click vào đây 🖕🏻</button>
+
+    <div class="message" id="msg">
+Hê lô Trương Linh  
+
+Cmsn b tôi! Trlinh sang tuổi 20 rồi nma vx chúc rằng trl vx luôn tự tin, toả sáng, mạnh mẽ và trưởng thành như vậy.  
+
+T bt rằng b vx luôn có nhiều tâm sự, nx buồn vx mong rằng trl sẵn sàng kể cho t nghe, t vx luôn muốn đc lắng nghe những câu chuyện của trl.  
+
+Hnay lúc đi đường nhớ lại hồi xưa vx luôn call nch nma chắc bg k đc nthe nx rùi.  
+
+Tôi bt b vx luôn luôn cố gắng, một mình ở bên Hàn kco bme rất thiệt thòi. Khi thấy trl có những ng b tuyệt vời ở Hàn thsu thấy vui cho m.  
+
+Nma mong trl kbg quên t.  
+
+Cuối cùng là  
+CHÚC MỪNG SINH NHẬT TRƯƠNG NGỌC LINH 💕💕
+    </div>
+
+    <audio id="music">
+        <source src="https://www.soundjay.com/happy-birthday/happy-birthday-song-01.mp3">
+    </audio>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("msg").style.display = "block";
+        document.getElementById("music").play();
+    }
+</script>
+
+</body>
+</html>
